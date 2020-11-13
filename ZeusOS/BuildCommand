@@ -1,0 +1,19 @@
+cd ~/Downloads/ZeusOS
+cd custombuild
+rm -r DefaultInternalWindow Desktop InternalWindow Notepad Icon
+rm custom.jar
+cd ../src
+cp -r DefaultInternalWindow Desktop InternalWindow Notepad Icon ../custombuild/
+cd ../custombuild
+javac **/*.java --release 8 -cp ":../javafx/*"
+jar cmvf MANIFEST.mf custom.jar *
+
+cd ~/Downloads/ZeusOS/src
+cp -r * ../build/
+cd ../build
+jar cmvf MANIFEST.mf file.jar *
+
+
+Clean Command:
+cd ~/Downloads/ZeusOS/src
+rm **/*.class

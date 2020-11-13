@@ -1,0 +1,16 @@
+Recently just completed the Drag Interface of InternalWindow
+Just made the Notepad.xml, now working on Notepad.java,
+which is similar to Default Internal Window, So make the copy
+Paste. Try to make a Notepad show on screen
+
+Next steps:
+Develop the class Icon, which takes a name, Image, and displays
+Icon. On double click (From desktop.fxml), spawn an internal frame
+object with getChildren().add(node). Add functionality to 
+save Notepad info into the Desktop info, and try to create Checkpoints.
+
+
+Later Steps:
+Create a fully fledged Desktop, and continue the notes on the Google Doc.
+
+--DISCONTINUED 00
